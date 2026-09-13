@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Worldy Quiz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<section id="languageScreen">
+    <h1>Worldy Quiz 🌍</h1>
+    <h2>Choose your language</h2>
+
+    <button id="persianButton">فارسی 🇮🇷</button>
+    <button id="arabicButton">العربية 🇸🇦</button>
+    <button id="englishButton">English 🇺🇸</button>
+</section>
+
+<section id="mainMenu">
+    <h1>Worldy Quiz 🌍</h1>
+
+    <button id="beginnerButton">Beginner</button>
+    <button id="vipButton">VIP Mode</button>
+    <button id="inviteButton">Invite Code</button>
+    <button id="loginButton">Login</button>
+    <button id="createIdButton">Create ID</button>
+</section>
+
+<section id="idScreen">
+    <h1>ID</h1>
+
+    <input id="playerID"
+           type="text"
+           inputmode="numeric"
+           maxlength="12"
+           placeholder="9-12 digit ID">
+
+    <button id="generateIdButton">Generate ID</button>
+    <button id="enterIdButton">Enter ID</button>
+    <button id="helpIdButton">ID Help</button>
+    <button id="backFromIdButton">Back</button>
+
+    <p id="idMessage"></p>
+</section>
+
+<section id="vipScreen">
+    <h1>VIP Mode 👑</h1>
+
+    <input id="vipCode"
+           type="text"
+           inputmode="numeric"
+           placeholder="VIP Code">
+
+    <button id="vipConfirmButton">Confirm</button>
+    <button id="backFromVipButton">Back</button>
+
+    <p id="vipMessage"></p>
+</section>
+
+<section id="inviteScreen">
+    <h1>Invite Code 🎁</h1>
+
+    <input id="inviteCode"
+           type="text"
+           inputmode="numeric"
+           placeholder="Invite Code">
+
+    <button id="inviteButtonConfirm">Confirm</button>
+    <button id="backFromInviteButton">Back</button>
+
+    <p id="inviteMessage"></p>
+</section>
+
+<section id="gameScreen">
+    <h1>Worldy Quiz 🌍</h1>
+
+    <p>Level: <span id="level">1</span></p>
+    <p>Coins: <span id="coins">0</span></p>
+    <p>Question: <span id="questionNumber">1</span></p>
+
+    <h2 id="questionText">Loading...</h2>
+
+    <input id="answerInput"
+           type="text"
+           placeholder="Your answer">
+
+    <button id="submitButton">Submit</button>
+    <button id="hintButton">Hint</button>
+    <button id="skipButton">Skip</button>
+
+    <p id="gameMessage"></p>
+</section>
+
+<section id="lockScreen">
+    <h1>Locked 🔒</h1>
+    <p>Time remaining:</p>
+    <h2 id="lockTimer">00:00</h2>
+
+    <input id="cheatCode"
+           type="text"
+           inputmode="numeric"
+           placeholder="Cheat Code">
+
+    <button id="cheatButton">Use Cheat</button>
+</section>
+
+<script src="worldgam.js"></script>
+</body>
+  </html>
